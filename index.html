@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cavallino Partners is a business development firm helping companies grow in UK and EU markets through market research, sales support, partnership development, and operational improvement." />
+  <meta name="robots" content="index, follow" />
+  <title>Cavallino Partners | Business Development &amp; Market Expansion</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50:  '#f0f2f8',
+              100: '#dde2ef',
+              200: '#bbc4df',
+              300: '#8fa0ca',
+              400: '#6378b3',
+              500: '#435a9c',
+              600: '#334783',
+              700: '#2a3a6b',
+              800: '#1e2a50',
+              900: '#141c38',
+            },
+            gold: {
+              400: '#c9a84c',
+              500: '#b8932f',
+              600: '#9e7a1e',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .divider { width: 48px; height: 3px; background-color: #b8932f; border-radius: 2px; }
+    /* Subtle fade-in for sections — no distracting animations */
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+
+<body class="bg-white text-navy-900 font-sans antialiased">
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo / Wordmark -->
+    <a href="#" class="flex items-center gap-2 no-underline">
+      <!-- Replace with actual SVG logo when available -->
+      <span class="text-navy-800 font-semibold text-xl tracking-tight">Cavallino Partners</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-navy-700">
+      <a href="#about"    class="hover:text-gold-500 transition-colors">About</a>
+      <a href="#services" class="hover:text-gold-500 transition-colors">Services</a>
+      <a href="#approach" class="hover:text-gold-500 transition-colors">Our Approach</a>
+      <a href="#markets"  class="hover:text-gold-500 transition-colors">Who We Serve</a>
+      <a href="#contact"  class="hover:text-gold-500 transition-colors">Contact</a>
+    </nav>
+
+    <!-- Primary CTA -->
+    <a href="#contact"
+       class="hidden md:inline-block bg-navy-800 text-white text-sm font-medium px-5 py-2.5 rounded hover:bg-navy-700 transition-colors">
+      Get in Touch
+    </a>
+
+    <!-- Mobile menu toggle (simple anchor) -->
+    <a href="#contact"
+       class="md:hidden bg-navy-800 text-white text-sm font-medium px-4 py-2 rounded hover:bg-navy-700 transition-colors">
+      Contact
+    </a>
+
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO SECTION
+============================================================ -->
+<section id="hero" class="pt-32 pb-24 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700 text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <!-- Eyebrow label -->
+    <p class="text-gold-400 text-sm font-semibold uppercase tracking-widest mb-6">
+      Business Development &middot; UK &amp; EU Markets
+    </p>
+
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+      Helping Companies Grow<br class="hidden sm:block" />
+      in the UK &amp; European Markets
+    </h1>
+
+    <p class="text-navy-200 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
+      Cavallino Partners provides practical, results-driven business development support — from market entry and partnership
+      development to sales growth and operational improvement.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact"
+         class="bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-3.5 rounded transition-colors text-base">
+        Book an Intro Call
+      </a>
+      <a href="#services"
+         class="border border-white/40 hover:border-white text-white font-medium px-8 py-3.5 rounded transition-colors text-base">
+        View Our Services
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT SECTION
+============================================================ -->
+<section id="about" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Text -->
+      <div class="fade-in">
+        <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">About Us</p>
+        <div class="divider mb-6"></div>
+        <h2 class="text-3xl md:text-4xl font-semibold text-navy-900 mb-6 leading-snug">
+          A Focused Partner for<br />Commercial Growth
+        </h2>
+        <p class="text-navy-600 leading-relaxed mb-5">
+          Cavallino Partners is a business development firm established to help companies achieve meaningful, sustainable
+          growth in the United Kingdom and European Union markets.
+        </p>
+        <p class="text-navy-600 leading-relaxed mb-5">
+          We work with organisations at different stages — from early-stage companies seeking their first international
+          foothold to established businesses looking to expand their commercial reach. Our approach is grounded in
+          practical support, direct market knowledge, and a clear focus on outcomes.
+        </p>
+        <p class="text-navy-600 leading-relaxed">
+          We do not offer generic strategies. We engage directly with the commercial priorities of each client and
+          deliver tailored support that drives measurable results.
+        </p>
+      </div>
+
+      <!-- Stat / trust block — no fake metrics, just qualitative anchors -->
+      <div class="fade-in">
+        <div class="bg-navy-50 rounded-xl p-8 border border-navy-100">
+          <ul class="space-y-6">
+            <li class="flex gap-4 items-start">
+              <div class="mt-1 w-5 h-5 flex-shrink-0">
+                <!-- Checkmark icon -->
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5 text-gold-500">
+                  <circle cx="10" cy="10" r="10" fill="#b8932f" opacity="0.12"/>
+                  <path d="M6 10.5l3 3 5-5" stroke="#b8932f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-navy-900 mb-0.5">UK &amp; EU Market Focus</p>
+                <p class="text-navy-500 text-sm leading-relaxed">Direct operational knowledge of UK and European commercial environments and regulatory contexts.</p>
+              </div>
+            </li>
+            <li class="flex gap-4 items-start">
+              <div class="mt-1 w-5 h-5 flex-shrink-0">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5 text-gold-500">
+                  <circle cx="10" cy="10" r="10" fill="#b8932f" opacity="0.12"/>
+                  <path d="M6 10.5l3 3 5-5" stroke="#b8932f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-navy-900 mb-0.5">Results-Driven Engagements</p>
+                <p class="text-navy-500 text-sm leading-relaxed">Every engagement is scoped around defined commercial objectives, with clear deliverables and accountability.</p>
+              </div>
+            </li>
+            <li class="flex gap-4 items-start">
+              <div class="mt-1 w-5 h-5 flex-shrink-0">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5 text-gold-500">
+                  <circle cx="10" cy="10" r="10" fill="#b8932f" opacity="0.12"/>
+                  <path d="M6 10.5l3 3 5-5" stroke="#b8932f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-navy-900 mb-0.5">Scalable &amp; Flexible Support</p>
+                <p class="text-navy-500 text-sm leading-relaxed">Engagements are tailored to the size, stage, and priorities of each client — not off-the-shelf solutions.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SERVICES SECTION
+============================================================ -->
+<section id="services" class="py-24 bg-gray-50 border-t border-gray-100">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="text-center mb-16 fade-in">
+      <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">What We Do</p>
+      <div class="divider mx-auto mb-6"></div>
+      <h2 class="text-3xl md:text-4xl font-semibold text-navy-900 mb-4">Our Services</h2>
+      <p class="text-navy-500 max-w-xl mx-auto leading-relaxed">
+        We provide a focused set of business development services designed to deliver commercial growth
+        for companies operating in or entering UK and EU markets.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Service 1: Market Research -->
+      <div class="fade-in bg-white rounded-xl p-7 border border-gray-200 hover:border-navy-200 hover:shadow-md transition-all">
+        <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-lg mb-2">Market Research</h3>
+        <p class="text-navy-500 text-sm leading-relaxed">
+          Structured market analysis to identify commercial opportunities, assess competitive landscapes, and
+          validate go-to-market assumptions across UK and EU sectors.
+        </p>
+      </div>
+
+      <!-- Service 2: Sales Support -->
+      <div class="fade-in bg-white rounded-xl p-7 border border-gray-200 hover:border-navy-200 hover:shadow-md transition-all">
+        <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-lg mb-2">Sales Support</h3>
+        <p class="text-navy-500 text-sm leading-relaxed">
+          Practical support to improve sales processes, develop pipeline, refine commercial propositions, and
+          increase revenue generation capability.
+        </p>
+      </div>
+
+      <!-- Service 3: Partnership Development -->
+      <div class="fade-in bg-white rounded-xl p-7 border border-gray-200 hover:border-navy-200 hover:shadow-md transition-all">
+        <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-lg mb-2">Partnership Development</h3>
+        <p class="text-navy-500 text-sm leading-relaxed">
+          Identifying and facilitating strategic commercial partnerships that expand market reach, distribution
+          capacity, and long-term business value.
+        </p>
+      </div>
+
+      <!-- Service 4: Market Entry Strategy -->
+      <div class="fade-in bg-white rounded-xl p-7 border border-gray-200 hover:border-navy-200 hover:shadow-md transition-all">
+        <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-lg mb-2">Market Entry Strategy</h3>
+        <p class="text-navy-500 text-sm leading-relaxed">
+          End-to-end advisory support for companies entering or expanding within UK and EU markets — from
+          regulatory context to commercial launch planning.
+        </p>
+      </div>
+
+      <!-- Service 5: M&A Support -->
+      <div class="fade-in bg-white rounded-xl p-7 border border-gray-200 hover:border-navy-200 hover:shadow-md transition-all">
+        <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-lg mb-2">M&amp;A Support</h3>
+        <p class="text-navy-500 text-sm leading-relaxed">
+          Commercial guidance and facilitation support for businesses exploring mergers, acquisitions, or
+          strategic transactions within target markets.
+        </p>
+      </div>
+
+      <!-- Service 6: Operational Improvement -->
+      <div class="fade-in bg-white rounded-xl p-7 border border-gray-200 hover:border-navy-200 hover:shadow-md transition-all">
+        <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-lg mb-2">Operational Improvement</h3>
+        <p class="text-navy-500 text-sm leading-relaxed">
+          Process improvement and digital tool implementation to increase operational efficiency, support
+          scalability, and reduce friction in day-to-day commercial operations.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     HOW WE WORK / APPROACH SECTION
+============================================================ -->
+<section id="approach" class="py-24 bg-white border-t border-gray-100">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="text-center mb-16 fade-in">
+      <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">Our Approach</p>
+      <div class="divider mx-auto mb-6"></div>
+      <h2 class="text-3xl md:text-4xl font-semibold text-navy-900 mb-4">How We Work</h2>
+      <p class="text-navy-500 max-w-xl mx-auto leading-relaxed">
+        Our engagements are built on three principles that shape how we advise and support every client.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Principle 1 -->
+      <div class="fade-in text-center px-4">
+        <div class="w-16 h-16 bg-navy-800 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-white font-semibold text-xl">01</span>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-xl mb-3">Practical</h3>
+        <p class="text-navy-500 leading-relaxed text-sm">
+          We focus on what works in the real world. Our support is grounded in commercial reality and oriented
+          toward actionable outcomes — not theoretical frameworks.
+        </p>
+      </div>
+
+      <!-- Principle 2 -->
+      <div class="fade-in text-center px-4">
+        <div class="w-16 h-16 bg-navy-800 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-white font-semibold text-xl">02</span>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-xl mb-3">Tailored</h3>
+        <p class="text-navy-500 leading-relaxed text-sm">
+          Every client operates in a different context. We take time to understand each organisation's situation,
+          objectives, and constraints before designing our approach.
+        </p>
+      </div>
+
+      <!-- Principle 3 -->
+      <div class="fade-in text-center px-4">
+        <div class="w-16 h-16 bg-navy-800 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-white font-semibold text-xl">03</span>
+        </div>
+        <h3 class="font-semibold text-navy-900 text-xl mb-3">Results-Driven</h3>
+        <p class="text-navy-500 leading-relaxed text-sm">
+          Our engagements are scoped around defined commercial objectives. We measure success by the growth,
+          partnerships, and operational improvements we help our clients achieve.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     MARKETS / WHO WE SERVE SECTION
+============================================================ -->
+<section id="markets" class="py-24 bg-navy-900 text-white">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="text-center mb-16 fade-in">
+      <p class="text-gold-400 text-sm font-semibold uppercase tracking-widest mb-3">Clients</p>
+      <div class="divider mx-auto mb-6" style="background-color:#c9a84c;"></div>
+      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-4">Who We Serve</h2>
+      <p class="text-navy-300 max-w-xl mx-auto leading-relaxed">
+        We work with companies at different stages of growth, across a range of industries, operating
+        in or seeking to expand into UK and European markets.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+
+      <!-- Startups -->
+      <div class="fade-in bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 transition-colors">
+        <div class="mb-4">
+          <svg class="w-8 h-8 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+            <path d="M9 18h6M10 22h4"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-white text-lg mb-2">Startups</h3>
+        <p class="text-navy-300 text-sm leading-relaxed">
+          Early-stage companies seeking structured support to validate their commercial model and begin
+          building market presence in the UK or EU.
+        </p>
+      </div>
+
+      <!-- Scale-ups -->
+      <div class="fade-in bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 transition-colors">
+        <div class="mb-4">
+          <svg class="w-8 h-8 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            <polyline points="17 6 23 6 23 12"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-white text-lg mb-2">Scale-Ups</h3>
+        <p class="text-navy-500 text-sm leading-relaxed" style="color: #94a3b8;">
+          Growing companies that need practical support to accelerate commercial momentum, build strategic
+          partnerships, and expand their footprint across new markets.
+        </p>
+      </div>
+
+      <!-- Established businesses -->
+      <div class="fade-in bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 transition-colors">
+        <div class="mb-4">
+          <svg class="w-8 h-8 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-white text-lg mb-2">Established Businesses</h3>
+        <p class="text-navy-500 text-sm leading-relaxed" style="color: #94a3b8;">
+          Larger organisations pursuing international growth, entering new verticals, or looking to improve
+          operational efficiency and commercial performance in existing markets.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTACT SECTION
+============================================================ -->
+<section id="contact" class="py-24 bg-white border-t border-gray-100">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="text-center mb-16 fade-in">
+      <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">Contact</p>
+      <div class="divider mx-auto mb-6"></div>
+      <h2 class="text-3xl md:text-4xl font-semibold text-navy-900 mb-4">Discuss Growth Opportunities</h2>
+      <p class="text-navy-500 max-w-xl mx-auto leading-relaxed">
+        If you are looking to grow your business in UK or EU markets, we would welcome a conversation.
+        Get in touch to arrange an introductory call.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-16">
+
+      <!-- Contact Form -->
+      <div class="fade-in">
+        <h3 class="font-semibold text-navy-900 text-xl mb-6">Send Us a Message</h3>
+
+        <!--
+          FORM HANDLER NOTE:
+          Replace the action="#" with your form backend endpoint (e.g. Formspree, Netlify Forms, or custom API).
+          For Formspree: action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+        -->
+        <form action="#" method="POST" class="space-y-5" onsubmit="handleFormSubmit(event)">
+
+          <div>
+            <label for="name" class="block text-sm font-medium text-navy-700 mb-1.5">Full Name <span class="text-red-500">*</span></label>
+            <input
+              type="text" id="name" name="name" required
+              placeholder="Jane Smith"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-navy-900 placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent transition"
+            />
+          </div>
+
+          <div>
+            <label for="company" class="block text-sm font-medium text-navy-700 mb-1.5">Company</label>
+            <input
+              type="text" id="company" name="company"
+              placeholder="Acme Corp Ltd"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-navy-900 placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent transition"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-navy-700 mb-1.5">Email Address <span class="text-red-500">*</span></label>
+            <input
+              type="email" id="email" name="email" required
+              placeholder="jane@company.com"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-navy-900 placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent transition"
+            />
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-medium text-navy-700 mb-1.5">Phone Number</label>
+            <input
+              type="tel" id="phone" name="phone"
+              placeholder="+44 20 XXXX XXXX"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-navy-900 placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent transition"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-navy-700 mb-1.5">Message <span class="text-red-500">*</span></label>
+            <textarea
+              id="message" name="message" required rows="5"
+              placeholder="Please briefly describe your business and what you are looking to achieve..."
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-navy-900 placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent transition resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Privacy note -->
+          <p class="text-xs text-gray-400 leading-relaxed">
+            By submitting this form, you agree to our
+            <a href="#" class="text-navy-600 hover:underline">Privacy Policy</a>.
+            We will use your information solely to respond to your enquiry.
+          </p>
+
+          <button
+            type="submit"
+            class="w-full bg-navy-800 hover:bg-navy-700 text-white font-semibold py-3.5 px-6 rounded-lg transition-colors text-base"
+          >
+            Send Message
+          </button>
+
+          <!-- Success message (hidden until form submitted) -->
+          <div id="form-success" class="hidden text-center py-3 px-4 bg-green-50 border border-green-200 rounded-lg text-green-700 text-sm font-medium">
+            Thank you. Your message has been received. We will be in touch shortly.
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Direct Contact Details -->
+      <div class="fade-in">
+        <h3 class="font-semibold text-navy-900 text-xl mb-6">Contact Details</h3>
+
+        <div class="space-y-6">
+
+          <!-- Email -->
+          <div class="flex gap-4 items-start">
+            <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs text-navy-400 uppercase tracking-wider font-semibold mb-0.5">Email</p>
+              <!-- REPLACE: Update with your verified business domain email -->
+              <a href="mailto:contact@cavallinopartners.com" class="text-navy-800 font-medium hover:text-gold-500 transition-colors">
+                contact@cavallinopartners.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex gap-4 items-start">
+            <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs text-navy-400 uppercase tracking-wider font-semibold mb-0.5">Phone</p>
+              <!-- REPLACE: Update with your registered business phone number -->
+              <p class="text-navy-800 font-medium">+1 XXX XXX XXXX</p>
+              <p class="text-navy-400 text-xs mt-0.5"><!-- REPLACE with office hours --></p>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="flex gap-4 items-start">
+            <div class="w-10 h-10 bg-navy-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-navy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs text-navy-400 uppercase tracking-wider font-semibold mb-0.5">Registered Address</p>
+              <!-- REPLACE: Update with your full registered business address -->
+              <p class="text-navy-800 font-medium leading-relaxed">
+                [Street Address]<br />
+                [City, State ZIP]<br />
+                United States
+              </p>
+            </div>
+          </div>
+
+          <!-- Response time -->
+          <div class="mt-8 p-5 bg-navy-50 rounded-xl border border-navy-100">
+            <p class="text-navy-700 text-sm leading-relaxed">
+              <span class="font-semibold">Response time:</span> We aim to respond to all enquiries within two business days.
+            </p>
+          </div>
+
+          <!-- LinkedIn placeholder -->
+          <!-- REPLACE: Add your real LinkedIn company page URL -->
+          <div class="mt-2">
+            <a href="#" class="inline-flex items-center gap-2 text-sm text-navy-600 hover:text-gold-500 transition-colors font-medium">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn — Cavallino Partners
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="bg-navy-900 text-white">
+
+  <!-- Main footer content -->
+  <div class="max-w-5xl mx-auto px-6 py-14">
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+      <!-- Brand / Company -->
+      <div class="md:col-span-2">
+        <p class="font-semibold text-white text-lg mb-3">Cavallino Partners</p>
+        <p class="text-navy-300 text-sm leading-relaxed mb-4">
+          Business development and commercial advisory services for companies seeking growth in the
+          United Kingdom and European Union markets.
+        </p>
+        <!-- Business scope note for compliance clarity -->
+        <p class="text-navy-400 text-xs leading-relaxed">
+          Services include: business development, market expansion support, partnership development,
+          commercial advisory, sales support, and operational improvement.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <p class="text-xs text-navy-400 uppercase tracking-wider font-semibold mb-4">Navigation</p>
+        <ul class="space-y-2 text-sm text-navy-300">
+          <li><a href="#about"    class="hover:text-white transition-colors">About</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+          <li><a href="#approach" class="hover:text-white transition-colors">Our Approach</a></li>
+          <li><a href="#markets"  class="hover:text-white transition-colors">Who We Serve</a></li>
+          <li><a href="#contact"  class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal links -->
+      <div>
+        <p class="text-xs text-navy-400 uppercase tracking-wider font-semibold mb-4">Legal</p>
+        <ul class="space-y-2 text-sm text-navy-300">
+          <!-- REPLACE: Link to real Privacy Policy page -->
+          <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <!-- REPLACE: Link to real Terms of Service page -->
+          <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <!-- REPLACE: Add LinkedIn company page URL -->
+          <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Compliance / legal details bar -->
+  <div class="border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-6 py-7">
+
+      <!--
+        COMPLIANCE DETAILS — REPLACE ALL PLACEHOLDERS BELOW:
+        - Legal company name (as registered)
+        - State of formation
+        - Registered address
+        - Contact email matching your domain
+      -->
+      <div class="text-navy-400 text-xs leading-relaxed space-y-1.5 mb-5">
+        <p>
+          <!-- REPLACE: e.g. "Cavallino Partners LLC" — use your exact legal entity name as registered -->
+          <span class="font-semibold text-navy-300">Cavallino Partners LLC</span>
+          &nbsp;&middot;&nbsp;
+          <!-- REPLACE: State of formation, e.g. "Registered in Delaware, United States" -->
+          Registered in [State], United States
+          &nbsp;&middot;&nbsp;
+          <!-- REPLACE: Your LLC/EIN registration number if required for display -->
+          Reg. No. [XXXXXXXXXX]
+        </p>
+        <p>
+          <!-- REPLACE: Full registered address -->
+          Registered Address: [Street Address], [City], [State] [ZIP], United States
+        </p>
+        <p>
+          <!-- REPLACE: Verified business email matching your domain -->
+          Contact: contact@cavallinopartners.com
+        </p>
+        <p class="pt-1 text-navy-500">
+          Cavallino Partners provides business development and commercial advisory services to clients in the United Kingdom
+          and European Union. Cavallino Partners is not a licensed financial advisor, investment advisor, or regulated entity
+          under any financial services framework. All services are commercial and advisory in nature.
+        </p>
+      </div>
+
+      <!-- Copyright -->
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-4 border-t border-white/10">
+        <p class="text-navy-500 text-xs">
+          &copy; <span id="footer-year"></span> Cavallino Partners LLC. All rights reserved.
+        </p>
+        <p class="text-navy-500 text-xs">
+          Serving clients in the United Kingdom &amp; European Union.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT — Minimal, no dependencies
+============================================================ -->
+<script>
+  // Set current year in footer
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  // Intersection Observer: fade-in sections on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Simple contact form handler (frontend only — no backend)
+  // REPLACE: Connect to your form backend (Formspree, Netlify Forms, custom API, etc.)
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    // Placeholder: show success message
+    // In production, replace with actual fetch/POST to your form handler
+    const form = event.target;
+    const successMsg = document.getElementById('form-success');
+    form.querySelectorAll('input, textarea, button[type="submit"]').forEach(el => el.disabled = true);
+    successMsg.classList.remove('hidden');
+    // Optional: reset after delay
+    // setTimeout(() => { form.reset(); successMsg.classList.add('hidden'); form.querySelectorAll('input, textarea, button').forEach(el => el.disabled = false); }, 6000);
+  }
+</script>
+
+</body>
+</html>
